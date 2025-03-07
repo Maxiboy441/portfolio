@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { CV } from "@/components/CV";
+import Footer from "@/components/Footer";
 
 const navItems = [
   { name: "About", link: "#about" },
@@ -26,11 +27,8 @@ export default function Home() {
         {/* IDEA: Workflow with Canvas Reveal Effect, Concept -> Code -> Review/Test ...... look for a alternative, Canvas Reveal Effect has bugs*/}
 
         <Projects />
-
-        {/* IDEA: For the Footer, with the contact button that opens the mail client, the Vortex Background would be cool */}
-        {/* IDEA: For the Footer. Add social media via Floating Dock if possible */}
-
       </div>
+      <Footer />
     </main>
   );
 }

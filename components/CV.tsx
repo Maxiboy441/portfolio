@@ -21,7 +21,7 @@ export function CV() {
           </p>
           <div className="mt-6">
             <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src="https://www.vaihingen.de/fileadmin/_processed_/d/8/csm_Horrheim_DSC7161_cbb66a81e5.jpg"
               alt="startup template"
               width={500}
               height={500}
@@ -50,14 +50,14 @@ export function CV() {
           </p>
           <div className="flex flex-col md:flex-row gap-6">
             <Image
-              src="https://assets.aceternity.com/pro/hero-sections.png"
+              src="https://www.kirbach-schule.de/kis/images/dsc_0097.jpg?crc=22410530"
               alt="hero template"
               width={500}
               height={500}
               className="rounded-lg object-cover h-32 md:h-44 lg:h-60 w-full shadow-md"
             />
             <Image
-              src="https://assets.aceternity.com/features-section.png"
+              src="https://www.lkz.de/cms_media/module_img/2805/1402868_1_detailbig_668d4da435ac8.jpg"
               alt="feature template"
               width={500}
               height={500}
@@ -73,7 +73,7 @@ export function CV() {
         <div className="mb-12">
           <div className="flex justify-center mb-6">
             <Image
-              src="https://assets.aceternity.com/features-section.png"
+              src="https://www.stuttgarter-nachrichten.de/media.media.fe6e1dbc-d2de-4f68-9d21-c6515c7a5674.original1024.jpg"
               alt="feature template"
               width={500}
               height={500}
@@ -101,7 +101,7 @@ export function CV() {
       ),
     },
     {
-      title: "2010 - 2014",
+      title: "2022 - 2025",
       content: (
         <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="flex-1 mb-6 md:mb-0">
@@ -124,7 +124,7 @@ export function CV() {
           </div>
           <div className="flex-1">
             <Image
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src="https://cdn.prod.website-files.com/63cafdabb04c4f56e65116df/65240bc68ad6737486993008_oddity_is_now_WD_background_new.webp"
               alt="startup template"
               width={500}
               height={500}

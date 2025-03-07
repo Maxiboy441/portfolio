@@ -6,7 +6,6 @@ const Hero = () => {
   return (
     <div className='pb-20 pt-36 h-screen relative' id='about'>
         {/* IDEA: Check if new spotlight is better */}
-        {/* Spotlights */}
         <div className='absolute inset-0'>
             <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white'/>
             <Spotlight className='top-10 left-full h-[80vh] w-[50vw]' fill='purple'/>
@@ -15,9 +14,13 @@ const Hero = () => {
         
         {/* IDEA: Check if gemini or sparkles effect in the backgoud would be cool and possible*/}
 
-        {/* Text content centered */}
         <div className='absolute inset-0 flex flex-col justify-center items-center text-center text-white px-6 md:px-12'>
-            <p className='text-xl font-medium opacity-80'>Software Development made in Germany</p>
+            <img 
+                src='/assets/Max.jpeg' 
+                alt='Max Portrait'
+                className='w-42 h-42 rounded-full border-2 border-purple-500 object-cover'
+            />
+            <p className='text-xl font-medium opacity-80 mt-6'>Software Development made in Germany</p>
             <h1 className='text-4xl font-bold mt-6 mb-4 md:text-5xl md:leading-tight'>
                 Young, Motivated, and Ready to Innovate with Modern Technologies
             </h1>

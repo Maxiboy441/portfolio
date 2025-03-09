@@ -14,7 +14,7 @@ export function Testimonials() {
         "Proactive and creative, Maximilian brings fresh perspectives and innovative solutions to every project, demonstrating impressive growth and expertise in his field.",
       name: "Stefan Heller",
       designation: "Headmaster of Mathidle Planck School",
-      src: "https://www.mps-lb.de/_mps_files/bilder/heller2.jpg",
+      src: "https://www.mps-lb.de/_mps_files/bilder/heller1.jpg",
     },
     {
       quote:

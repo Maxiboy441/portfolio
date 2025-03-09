@@ -4,6 +4,7 @@ import { FloatingNav } from "@/components/ui/floating-navbar";
 import { CV } from "@/components/CV";
 import Footer from "@/components/Footer";
 import { Bento } from "@/components/Bento";
+import { Testimonials } from "@/components/Testimonials";
 
 const navItems = [
   { name: "About", link: "#about" },
@@ -25,6 +26,8 @@ export default function Home() {
         <CV />
 
         {/* IDEA: If testamonials, use Animated Testamonials*/}
+
+        <Testimonials />
 
         <div id="projects" />
         <Projects />

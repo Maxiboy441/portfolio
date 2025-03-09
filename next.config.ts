@@ -28,8 +28,7 @@ module.exports = {
       "cdn.prod.website-files.com",
       "www.vaihingen.de",
       "cdn-icons-png.flaticon.com",
+      "letsenhance.io"
     ],
   },
 };
-
-export default nextConfig;

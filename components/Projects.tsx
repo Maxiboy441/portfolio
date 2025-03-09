@@ -49,7 +49,6 @@ const project1 = [
   },
 ];
 
- {/* TODO: Add docker as soon at it as dockerized*/}
 const project2 = [
   {
     id: 1,
@@ -78,6 +77,13 @@ const project2 = [
     designation: "JavaScript",
     image:
       "https://www.citypng.com/public/uploads/preview/js-javascript-round-logo-icon-png-7017516947717339mnyf7eumy.png",
+  },
+  {
+    id: 5,
+    name: "Docker",
+    designation: "Docker + Docker-Compose",
+    image:
+      "https://www.opc-router.de/wp-content/uploads/2023/07/Docker_150x150px-01-01-01.png",
   },
 ];
 

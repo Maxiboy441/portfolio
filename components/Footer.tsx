@@ -1,53 +1,13 @@
 'use client';
 
 import React, { useState } from "react";
-import { FloatingDock } from "@/components/ui/floating-dock";
-import {
-  IconBrandGithub,
-  IconBrandInstagram,
-  IconBrandLinkedin,
-} from "@tabler/icons-react";
 
 const Footer = () => {
   const [isImpressumOpen, setIsImpressumOpen] = useState(false);
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
 
-  const links = [
-    {
-      title: "Instagram",
-      icon: (
-        <IconBrandInstagram className="h-full w-full text-neutral-300" />
-      ),
-      href: "https://www.instagram.com/mimiarcade/",
-    },
-    {
-      title: "LinkedIn",
-      icon: (
-        <IconBrandLinkedin className="h-full w-full text-neutral-300" />
-      ),
-      href: "https://www.linkedin.com/in/maximilian-huber-3105491b6",
-    },
-    {
-      title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-300" />
-      ),
-      href: "https://github.com/Maxiboy441",
-    },
-  ];
-
   return (
-    <div className="pb-16 pt-12 w-full bg-black-400 text-center text-sm text-neutral-300">
-      
-      {/* Socials component (FloatingDock) */}
-      <div id="socials" className="mb-8">
-        <div className="flex items-center justify-center w-full">
-          <FloatingDock
-            mobileClassName="translate-y-20" // only for demo, remove for production
-            items={links}
-          />
-        </div>
-      </div>
+    <div className="pb-16 pt-12 w-screen bg-black-400 text-center text-sm text-neutral-300">
 
       {/* Buttons for Impressum and Privacy Policy */}
       <div className="mt-8 space-x-4">

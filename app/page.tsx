@@ -4,12 +4,14 @@ import { FloatingNav } from "@/components/ui/floating-navbar";
 import { CV } from "@/components/CV";
 import Footer from "@/components/Footer";
 import { Bento } from "@/components/Bento";
+import { Gallery } from "@/components/Gallery";
 
 const navItems = [
   { name: "About", link: "#about" },
   { name: "Curriculum Vitae", link: "#cv" },
   { name: "Projects", link: "#projects" },
   { name: "Contact", link: "#contact" },
+  { name: "Gallery", link: "#gallery" },
 ];
 
 export default function Home() {
@@ -31,6 +33,9 @@ export default function Home() {
 
         <div id="contact" />
         <Bento />
+
+        <div className="pb-12" id="gallery"/>
+        <Gallery />
 
         <div className="pb-12"/>
 

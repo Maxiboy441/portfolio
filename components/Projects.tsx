@@ -218,12 +218,14 @@ const Projects = () => {
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://pixelprime.maxih.de"
+                href="https://github.com/Maxiboy441/PixelPrime"
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal text-[#CBACF9] hover:text-neutral-300"
                 style={{ fontSize: "20px" }}
+                data-umami-event="Check out Pixelprime code"
               >
-                Live page →
+                {/* TODO: If pixelprime is live again, update this to "Live page →", the umami event to "Go to Pixelprime" and the href to "https://pixelprime.maxih.de" */}
+                Code →
               </CardItem>
             </div>
           </CardBody>
@@ -275,6 +277,7 @@ const Projects = () => {
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal text-[#CBACF9] hover:text-neutral-300"
                 style={{ fontSize: "20px" }}
+                data-umami-event="Go to Solar System"
               >
                 Live page →
               </CardItem>
@@ -329,6 +332,7 @@ const Projects = () => {
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal text-[#CBACF9] hover:text-neutral-300"
                 style={{ fontSize: "20px" }}
+                data-umami-event="Check out Portfolio code"
               >
                 Code →
               </CardItem>

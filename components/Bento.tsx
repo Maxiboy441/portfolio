@@ -38,7 +38,6 @@ export function Bento() {
       <div id="socials" className="mb-8">
         <div className="flex items-center justify-center w-full">
           <FloatingDock
-            mobileClassName="translate-y-20" // only for demo, remove for production
             items={links}
           />
         </div>
@@ -115,7 +114,7 @@ const SkeletonFour = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Implement the cocnept and make it work.
+          Implement the concept and make it work.
         </p>
         <p className="border border-green-500 bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
           Code
@@ -167,6 +166,7 @@ const SkeletonFive = () => {
       <button
         onClick={copyEmail}
         className="px-6 py-6 mt-4 bg-gray-800 text-white rounded-full relative overflow-hidden border-2"
+        data-umami-event="Copy Email"
       >
         <span className="relative z-10">
           {copied ? "Email Copied!" : "Copy Email Address"}

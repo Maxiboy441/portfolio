@@ -24,11 +24,7 @@ export default function Home() {
         <div id="cv" />
         <CV />
 
-        {/* IDEA: Bento Grid, maybe use the Codeblock component inside of one item */}
-
         {/* IDEA: If testamonials, use Animated Testamonials*/}
-
-        {/* IDEA: Workflow with Canvas Reveal Effect, Concept -> Code -> Review/Test ...... look for a alternative, Canvas Reveal Effect has bugs*/}
 
         <div id="projects" />
         <Projects />

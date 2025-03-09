@@ -78,15 +78,20 @@ const Footer = () => {
               <strong>External Sources</strong>
               <br />
               <br />
-              "www.google.com", "images.unsplash.com", "github.com",
-              "user-images.githubusercontent.com", "assets.aceternity.com",
-              "m.media-amazon.com", "cdn.pixabay.com", "www.citypng.com",
-              "www.opc-router.de", "www.bujarra.com",
-              "encrypted-tbn0.gstatic.com", "www.rlogical.com",
-              "ui.aceternity.com", "pbs.twimg.com", "liersch.it",
-              "www.stuttgarter-nachrichten.de", "www.kirbach-schule.de",
-              "www.lkz.de", "cdn.prod.website-files.com", "www.vaihingen.de",
-              "cdn-icons-png.flaticon.com", "letsenhance.io"
+              &quot;www.google.com&quot;, &quot;images.unsplash.com&quot;,
+              &quot;github.com&quot;,
+              &quot;user-images.githubusercontent.com&quot;,
+              &quot;assets.aceternity.com&quot;, &quot;m.media-amazon.com&quot;,
+              &quot;cdn.pixabay.com&quot;, &quot;www.citypng.com&quot;,
+              &quot;www.opc-router.de&quot;, &quot;www.bujarra.com&quot;,
+              &quot;encrypted-tbn0.gstatic.com&quot;,
+              &quot;www.rlogical.com&quot;, &quot;ui.aceternity.com&quot;,
+              &quot;pbs.twimg.com&quot;, &quot;liersch.it&quot;,
+              &quot;www.stuttgarter-nachrichten.de&quot;,
+              &quot;www.kirbach-schule.de&quot;, &quot;www.lkz.de&quot;,
+              &quot;cdn.prod.website-files.com&quot;,
+              &quot;www.vaihingen.de&quot;,
+              &quot;cdn-icons-png.flaticon.com&quot;, &quot;letsenhance.io&quot;
               <br />
               <br />
               <strong>Data protection</strong>

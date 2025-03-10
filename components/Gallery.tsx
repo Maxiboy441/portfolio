@@ -74,6 +74,18 @@ export function Gallery() {
       title: "Chinese food in London",
       src: "/assets/Gallery-18.jpeg",
     },
+    {
+        title: "Picking up my first motorcycle",
+        src: "/assets/Gallery-19.jpeg",
+    },
+    {
+        title: "Playing one of my instruments",
+        src: "/assets/Gallery-20.jpeg",
+    },
+    {
+        title: "Dressed as Santa at work, got my colleagues hats to match",
+        src: "/assets/Gallery-21.jpeg",
+    },
   ];
 
   return (

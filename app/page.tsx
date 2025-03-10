@@ -34,8 +34,9 @@ export default function Home() {
         <div id="contact" />
         <Bento />
 
-        <div className="pb-12" id="gallery"/>
-        <Gallery />
+        <div className="pb-12 hidden sm:block" id="gallery">
+          <Gallery />
+        </div>
 
         <div className="pb-12"/>
 

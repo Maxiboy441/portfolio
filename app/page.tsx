@@ -26,8 +26,6 @@ export default function Home() {
         <div id="cv" />
         <CV />
 
-        {/* IDEA: If testamonials, use Animated Testamonials*/}
-
         <div id="projects" />
         <Projects />
 

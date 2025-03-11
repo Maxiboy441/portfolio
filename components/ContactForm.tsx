@@ -12,19 +12,20 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [buttonText, setButtonText] = useState('Send Message');
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
   };
+  
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     setButtonText('Email Sent');
-
+  
     try {
       const response = await fetch('https://formsubmit.co/f0845c5b913eb757b4dbde8a20374c00', {
         method: 'POST',
@@ -33,7 +34,7 @@ export default function ContactForm() {
         },
         body: JSON.stringify(formData),
       });
-
+  
       if (response.ok) {
         setFormData({
           name: '',
@@ -47,12 +48,13 @@ export default function ContactForm() {
         setButtonText('Send Message');
       }
     } catch (error) {
+      console.error(error);
       alert('Something went wrong. Please try again.');
       setButtonText('Send Message');
     } finally {
       setIsSubmitting(false);
     }
-  };
+  };  
 
   return (
     <form

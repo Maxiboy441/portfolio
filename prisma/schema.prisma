@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root@127.0.0.1:1212/portfolio"
+}
+
+model contact {
+  id      Int     @id @default(autoincrement()) @db.UnsignedInt
+  name    String? @db.TinyText
+  email   String? @db.TinyText
+  subject String? @db.TinyText
+  message String? @db.Text
+}

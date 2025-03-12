@@ -5,6 +5,7 @@ import { CV } from "@/components/CV";
 import Footer from "@/components/Footer";
 import { Bento } from "@/components/Bento";
 import { Gallery } from "@/components/Gallery";
+import ContactForm from "@/components/ContactForm";
 
 const navItems = [
   { name: "About", link: "#about" },
@@ -31,13 +32,16 @@ export default function Home() {
 
         <div id="contact" />
         <Bento />
+        
+        <div className="pb-12"/>
+        <ContactForm />
+        <div className="pb-12"/>
 
         <div className="pb-12 hidden sm:block" id="gallery">
           <Gallery />
         </div>
 
         <div className="pb-12"/>
-
       </div>
 
 

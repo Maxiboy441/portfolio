@@ -33,20 +33,26 @@ export default function ContactForm() {
 
   // Handle click outside to close tooltip on mobile
   useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
+    const handleMouseClickOutside = (event: MouseEvent) => {
+      if (tooltipRef.current && !tooltipRef.current.contains(event.target as Node) && tooltipVisible) {
+        setTooltipVisible(false);
+      }
+    };
+
+    const handleTouchOutside = (event: TouchEvent) => {
       if (tooltipRef.current && !tooltipRef.current.contains(event.target as Node) && tooltipVisible) {
         setTooltipVisible(false);
       }
     };
 
     if (isMobile) {
-      document.addEventListener("mousedown", handleClickOutside);
-      document.addEventListener("touchstart", handleClickOutside);
+      document.addEventListener("mousedown", handleMouseClickOutside);
+      document.addEventListener("touchstart", handleTouchOutside);
     }
     
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-      document.removeEventListener("touchstart", handleClickOutside);
+      document.removeEventListener("mousedown", handleMouseClickOutside);
+      document.removeEventListener("touchstart", handleTouchOutside);
     };
   }, [tooltipVisible, isMobile]);
 
@@ -124,7 +130,7 @@ export default function ContactForm() {
                   : 'opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto'}
               `}
             >
-              This form is processed using FormSubmit.co, which has a 60s cooldown. If your message is urgent or if I don't reply within 3-5 days, please email me directly.
+              This form is processed using FormSubmit.co, which has a 60s cooldown. If your message is urgent or if I don&apos;t reply within 3-5 days, please email me directly.
             </span>
           </span>
         </h2>

@@ -198,6 +198,7 @@ export default function ContactForm() {
           type="submit"
           disabled={isSubmitting}
           className="w-full py-3 mt-4 rounded-lg bg-indigo-600 text-white font-semibold focus:outline-none hover:bg-indigo-500 disabled:bg-gray-500"
+          data-umami-event="Contact Form Submit"
         >
           {buttonText}
         </button>

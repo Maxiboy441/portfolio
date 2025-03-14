@@ -12,6 +12,7 @@ const navItems = [
   { name: "About", link: "#about" },
   { name: "Curriculum Vitae", link: "#cv" },
   { name: "Projects", link: "#projects" },
+  { name: "Dev Skills", link: "#dev-skills" },
   { name: "Contact", link: "#contact" },
   { name: "Gallery", link: "#gallery" },
 ];
@@ -31,8 +32,8 @@ export default function Home() {
         <div id="projects" />
         <Projects />
 
+        <div id="dev-skills" />
         <Bento />
-
         <TechStack />
         
         <div className="pb-12" id="contact"/>

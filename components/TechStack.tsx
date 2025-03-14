@@ -127,5 +127,7 @@ const skills = [
       </div>
     );
   });
+
+  CategorySection.displayName = "TechStack";
   
   export default TechStack;

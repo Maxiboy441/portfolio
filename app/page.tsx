@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Bento } from "@/components/Bento";
 import { Gallery } from "@/components/Gallery";
 import ContactForm from "@/components/ContactForm";
+import TechStack from "@/components/TechStack";
 
 const navItems = [
   { name: "About", link: "#about" },
@@ -23,6 +24,8 @@ export default function Home() {
         
         <div id="about" />
         <Hero />
+
+        <TechStack />
 
         <div id="cv" />
         <CV />

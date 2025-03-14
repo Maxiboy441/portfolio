@@ -92,6 +92,9 @@ const Footer = () => {
               &quot;cdn.prod.website-files.com&quot;,
               &quot;www.vaihingen.de&quot;,
               &quot;cdn-icons-png.flaticon.com&quot;, &quot;letsenhance.io&quot;
+              &quot;cdn.worldvectorlogo.com&quot;,
+              &quot;upload.wikimedia.org&quot;
+              &quot;i.namu.wiki&quot;
               <br />
               <br />
               <strong>Data protection</strong>

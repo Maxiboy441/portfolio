@@ -2,47 +2,13 @@
 import { cn } from "@/lib/utils";
 import React, { useState } from "react";
 import { BentoGrid, BentoGridItem } from "../components/ui/bento-grid";
-import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconClipboardCopy, IconTableColumn } from "@tabler/icons-react";
+import { IconClipboardCopy, IconTableColumn } from "@tabler/icons-react";
 import { motion } from "motion/react";
 import Image from "next/image";
-import { FloatingDock } from "./ui/floating-dock";
-
-const links = [
-  {
-    title: "Instagram",
-    icon: (
-      <IconBrandInstagram className="h-full w-full text-neutral-300" />
-    ),
-    href: "https://www.instagram.com/mimiarcade/",
-  },
-  {
-    title: "LinkedIn",
-    icon: (
-      <IconBrandLinkedin className="h-full w-full text-neutral-300" />
-    ),
-    href: "https://www.linkedin.com/in/maximilian-huber-3105491b6",
-  },
-  {
-    title: "GitHub",
-    icon: (
-      <IconBrandGithub className="h-full w-full text-neutral-300" />
-    ),
-    href: "https://github.com/Maxiboy441",
-  },
-];
 
 export function Bento() {
   return (
     <div>
-      {/* Socials component (FloatingDock) */}
-      <div id="socials" className="mb-8">
-        <div className="flex items-center justify-center w-full">
-          <FloatingDock
-            items={links}
-          />
-        </div>
-      </div>
-
       <BentoGrid className="w-full mx-auto md:auto-rows-[20rem]">
         {items.map((item, i) => (
           <BentoGridItem

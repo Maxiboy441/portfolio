@@ -1,16 +1,40 @@
 "use client";
 
-import { useState, useEffect, useRef } from 'react';
+import {
+  IconBrandGithub,
+  IconBrandInstagram,
+  IconBrandLinkedin,
+} from "@tabler/icons-react";
+import { useState, useEffect, useRef } from "react";
+import { FloatingDock } from "./ui/floating-dock";
+
+const links = [
+  {
+    title: "Instagram",
+    icon: <IconBrandInstagram className="h-full w-full text-neutral-300" />,
+    href: "https://www.instagram.com/mimiarcade/",
+  },
+  {
+    title: "LinkedIn",
+    icon: <IconBrandLinkedin className="h-full w-full text-neutral-300" />,
+    href: "https://www.linkedin.com/in/maximilian-huber-3105491b6",
+  },
+  {
+    title: "GitHub",
+    icon: <IconBrandGithub className="h-full w-full text-neutral-300" />,
+    href: "https://github.com/Maxiboy441",
+  },
+];
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    regard: '',
-    text: '',
+    name: "",
+    email: "",
+    regard: "",
+    text: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [buttonText, setButtonText] = useState('Send Message');
+  const [buttonText, setButtonText] = useState("Send Message");
   const [tooltipVisible, setTooltipVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const tooltipRef = useRef<HTMLSpanElement>(null);
@@ -20,13 +44,13 @@ export default function ContactForm() {
     const checkIfMobile = () => {
       setIsMobile(window.matchMedia("(max-width: 768px)").matches);
     };
-    
+
     // Check on initial load
     checkIfMobile();
-    
+
     // Set up event listener for window resize
     window.addEventListener("resize", checkIfMobile);
-    
+
     // Clean up
     return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
@@ -34,13 +58,21 @@ export default function ContactForm() {
   // Handle click outside to close tooltip on mobile
   useEffect(() => {
     const handleMouseClickOutside = (event: MouseEvent) => {
-      if (tooltipRef.current && !tooltipRef.current.contains(event.target as Node) && tooltipVisible) {
+      if (
+        tooltipRef.current &&
+        !tooltipRef.current.contains(event.target as Node) &&
+        tooltipVisible
+      ) {
         setTooltipVisible(false);
       }
     };
 
     const handleTouchOutside = (event: TouchEvent) => {
-      if (tooltipRef.current && !tooltipRef.current.contains(event.target as Node) && tooltipVisible) {
+      if (
+        tooltipRef.current &&
+        !tooltipRef.current.contains(event.target as Node) &&
+        tooltipVisible
+      ) {
         setTooltipVisible(false);
       }
     };
@@ -49,14 +81,16 @@ export default function ContactForm() {
       document.addEventListener("mousedown", handleMouseClickOutside);
       document.addEventListener("touchstart", handleTouchOutside);
     }
-    
+
     return () => {
       document.removeEventListener("mousedown", handleMouseClickOutside);
       document.removeEventListener("touchstart", handleTouchOutside);
     };
   }, [tooltipVisible, isMobile]);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
@@ -67,33 +101,36 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setButtonText('Email Sent');
+    setButtonText("Email Sent");
 
     try {
-      const response = await fetch('https://formsubmit.co/f0845c5b913eb757b4dbde8a20374c00', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://formsubmit.co/f0845c5b913eb757b4dbde8a20374c00",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (response.ok) {
         setFormData({
-          name: '',
-          email: '',
-          regard: '',
-          text: '',
+          name: "",
+          email: "",
+          regard: "",
+          text: "",
         });
-        setTimeout(() => setButtonText('Send Message'), 2000);
+        setTimeout(() => setButtonText("Send Message"), 2000);
       } else {
-        alert('Something went wrong. Please try again.');
-        setButtonText('Send Message');
+        alert("Something went wrong. Please try again.");
+        setButtonText("Send Message");
       }
     } catch (error) {
       console.error(error);
-      alert('Something went wrong. Please try again.');
-      setButtonText('Send Message');
+      alert("Something went wrong. Please try again.");
+      setButtonText("Send Message");
     } finally {
       setIsSubmitting(false);
     }
@@ -110,27 +147,45 @@ export default function ContactForm() {
       <div className="relative inline-block mb-8">
         <h2 className="text-4xl font-bold text-neutral-100 inline-flex items-center">
           Contact me
-          <span 
+          <span
             ref={tooltipRef}
             className="ml-2 cursor-pointer relative group"
             onClick={toggleTooltip}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-400">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-gray-400"
+            >
               <circle cx="12" cy="12" r="10"></circle>
               <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
               <line x1="12" y1="17" x2="12.01" y2="17"></line>
             </svg>
-            <span 
+            <span
               className={`
                 absolute left-1/2 -translate-x-1/2 bottom-full mb-2 
                 w-64 p-3 bg-gray-800 text-white text-sm rounded shadow-lg z-10
                 transition-opacity duration-300
-                ${isMobile 
-                  ? tooltipVisible ? 'opacity-100' : 'opacity-0 pointer-events-none' 
-                  : 'opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto'}
+                ${
+                  isMobile
+                    ? tooltipVisible
+                      ? "opacity-100"
+                      : "opacity-0 pointer-events-none"
+                    : "opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto"
+                }
               `}
             >
-              This form is processed using FormSubmit.co, which has a 60s cooldown. If your message is urgent or if I don&apos;t reply within 3-5 days, please email me directly.
+              This form is processed using FormSubmit.co, which has a 60s
+              cooldown. If your message is urgent or if I don&apos;t reply
+              within 3-5 days, please email me directly at
+              maxiboy44yt@gmail.com.
             </span>
           </span>
         </h2>
@@ -144,7 +199,9 @@ export default function ContactForm() {
         <input type="hidden" name="_next" value="" />
 
         <div className="flex flex-col">
-          <label htmlFor="name" className="text-lg text-white mb-2">Name</label>
+          <label htmlFor="name" className="text-lg text-white mb-2">
+            Name
+          </label>
           <input
             type="text"
             name="name"
@@ -157,7 +214,9 @@ export default function ContactForm() {
         </div>
 
         <div className="flex flex-col">
-          <label htmlFor="email" className="text-lg text-white mb-2">Your Email</label>
+          <label htmlFor="email" className="text-lg text-white mb-2">
+            Your Email
+          </label>
           <input
             type="email"
             name="email"
@@ -170,7 +229,9 @@ export default function ContactForm() {
         </div>
 
         <div className="flex flex-col">
-          <label htmlFor="regard" className="text-lg text-white mb-2">Regard</label>
+          <label htmlFor="regard" className="text-lg text-white mb-2">
+            Regard
+          </label>
           <input
             type="text"
             name="regard"
@@ -183,7 +244,9 @@ export default function ContactForm() {
         </div>
 
         <div className="flex flex-col">
-          <label htmlFor="text" className="text-lg text-white mb-2">Message</label>
+          <label htmlFor="text" className="text-lg text-white mb-2">
+            Message
+          </label>
           <textarea
             name="text"
             id="text"
@@ -203,6 +266,13 @@ export default function ContactForm() {
           {buttonText}
         </button>
       </form>
+
+      {/* Socials component (FloatingDock) */}
+      <div id="socials" className="mb-4 mt-4">
+        <div className="flex items-center justify-center w-full">
+          <FloatingDock items={links} />
+        </div>
+      </div>
     </div>
   );
 }

@@ -25,18 +25,17 @@ export default function Home() {
         <div id="about" />
         <Hero />
 
-        <TechStack />
-
         <div id="cv" />
         <CV />
 
         <div id="projects" />
         <Projects />
 
-        <div id="contact" />
         <Bento />
+
+        <TechStack />
         
-        <div className="pb-12"/>
+        <div className="pb-12" id="contact"/>
         <ContactForm />
         <div className="pb-12"/>
 

@@ -31,7 +31,8 @@ module.exports = {
       "letsenhance.io",
       "cdn.worldvectorlogo.com",
       "upload.wikimedia.org",
-      "i.namu.wiki"
+      "i.namu.wiki",
+      "www.svgrepo.com"
     ],
   },
 };

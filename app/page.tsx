@@ -1,3 +1,14 @@
+"use client"; // Um sicherzustellen, dass der Code nur auf der Client-Seite ausgeführt wird
+
+declare global {
+  interface Window {
+    umami?: {
+      track: (event: string) => void;
+    };
+  }
+}
+
+import { useEffect } from "react";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/floating-navbar";
@@ -18,6 +29,32 @@ const navItems = [
 ];
 
 export default function Home() {
+  useEffect(() => {
+    const trackedDepths = new Set<number>(); // Set zur Vermeidung mehrfacher Events
+
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const pageHeight = document.documentElement.scrollHeight;
+
+      const scrollPercent = Math.round((scrollPosition / pageHeight) * 100);
+
+      // Track bei 25%, 50%, 75%, und 100% der Seite
+      [25, 50, 75, 100].forEach((depth) => {
+        if (scrollPercent >= depth && !trackedDepths.has(depth)) {
+          trackedDepths.add(depth);
+          if (typeof window.umami !== "undefined") {
+            window.umami.track(`${depth}% Scroll erreicht`);
+          }
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup: Event Listener entfernen, wenn die Komponente unmontiert wird
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
@@ -46,7 +83,6 @@ export default function Home() {
 
         <div className="pb-12"/>
       </div>
-
 
       <Footer />
     </main>

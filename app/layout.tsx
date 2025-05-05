@@ -33,7 +33,7 @@ export default function RootLayout({
       <Script
         async
         src="https://monitoring.maxih.de/script.js"
-        data-website-id="cc0ffbd4-f02d-4e45-af96-d8243c8b8a97"
+        data-website-id="6db0a125-f691-4b6f-9c9b-51b0d584617a"
        />
     </html>
   );

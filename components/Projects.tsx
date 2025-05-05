@@ -218,14 +218,13 @@ const Projects = () => {
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://github.com/Maxiboy441/PixelPrime"
+                href="https://pixelprime.maxih.de"
                 target="__blank"
                 className="px-4 py-2 rounded-xl text-xs font-normal text-[#CBACF9] hover:text-neutral-300"
                 style={{ fontSize: "20px" }}
-                data-umami-event="Check out Pixelprime code"
+                data-umami-event="Go to Pixelprime"
               >
-                {/* TODO: If pixelprime is live again, update this to "Live page →", the umami event to "Go to Pixelprime" and the href to "https://pixelprime.maxih.de" */}
-                Code →
+                Live page→
               </CardItem>
             </div>
           </CardBody>
@@ -236,7 +235,7 @@ const Projects = () => {
           <CardBody className="bg-transparent relative group/card w-auto sm:w-[30rem] h-auto rounded-xl p-6 border border-black-300">
             <CardItem translateZ="100" className="w-full mt-4">
               <Image
-                src="https://user-images.githubusercontent.com/116082321/213998775-8f4d7fb2-b7ae-44d0-9b6c-69c2284f2cf8.png"
+                src="/assets/solar.png"
                 height="1000"
                 width="1000"
                 className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"

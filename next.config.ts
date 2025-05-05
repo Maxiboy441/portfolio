@@ -32,7 +32,8 @@ module.exports = {
       "cdn.worldvectorlogo.com",
       "upload.wikimedia.org",
       "i.namu.wiki",
-      "www.svgrepo.com"
+      "www.svgrepo.com",
+      "www.etes.de"
     ],
   },
 };

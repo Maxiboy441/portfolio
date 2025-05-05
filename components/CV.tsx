@@ -87,7 +87,7 @@ export function CV() {
           >
             Mathilde Planck Gymnasium Ludwigsburg
           </a>
-            <p className="text-neutral-200 text-xs md:text-sm font-normal mb-6">
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-6">
             Over the course of two years, I completed the school part of my
             university entrance qualification, specialising in psychology and
             pedagogy. Due to my skills, I was allowed to repeatedly teach
@@ -107,11 +107,11 @@ export function CV() {
           <div className="flex-1 mb-6 md:mb-0">
             <h3 className="text-white font-bold text-3xl">Apprenticeship</h3>
             <a
-            href="https://www.wongdoody.com"
-            className="text-gray-400 text-base hover:text-[#CBACF9]"
-          >
-            wongdoody GmbH
-          </a>
+              href="https://www.wongdoody.com"
+              className="text-gray-400 text-base hover:text-[#CBACF9]"
+            >
+              wongdoody GmbH
+            </a>
             <p className="text-neutral-200 text-xs md:text-sm font-normal">
               I started my apprenticeship in a web agency with a focus on
               Laravel and learnt best practices and the basics of modern web
@@ -122,9 +122,41 @@ export function CV() {
               experience in working with customers and in project management.
             </p>
           </div>
-          <div className="flex-1">
+          <div className="flex-1 pl-3">
             <Image
               src="https://cdn.prod.website-files.com/63cafdabb04c4f56e65116df/65240bc68ad6737486993008_oddity_is_now_WD_background_new.webp"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-40 md:h-44 lg:h-60 w-full shadow-lg"
+            />
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Soon",
+      content: (
+        <div className="flex flex-col md:flex-row items-center mb-12">
+          <div className="flex-1 mb-6 md:mb-0">
+            <h3 className="text-white font-bold text-3xl">First Job</h3>
+            <a
+              href="https://www.etes.de"
+              className="text-gray-400 text-base hover:text-[#CBACF9]"
+            >
+              ETES GmbH
+            </a>
+            <p className="text-neutral-200 text-xs md:text-sm font-normal">
+              After my apprenticeship, I will continue to work as a full-stack
+              developer at ETES GmbH. Contracts are already signed and I am
+              looking forward to the new challenges. Im exiteted to learn more
+              about the company and the projects I will be working on and to
+              contribute my skills and knowledge to the team.
+            </p>
+          </div>
+          <div className="flex-1 pl-3">
+            <Image
+              src="https://www.etes.de/files/etes/bilder/ETES_Au%C3%9Fengeb%C3%A4ude.png"
               alt="startup template"
               width={500}
               height={500}

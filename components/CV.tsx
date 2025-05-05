@@ -138,6 +138,15 @@ export function CV() {
       title: "Soon",
       content: (
         <div className="flex flex-col md:flex-row items-center mb-12">
+          <div className="flex-1 pr-5">
+            <Image
+              src="https://www.etes.de/files/etes/bilder/ETES_Au%C3%9Fengeb%C3%A4ude.png"
+              alt="startup template"
+              width={500}
+              height={500}
+              className="rounded-lg object-cover h-40 md:h-44 lg:h-60 w-full shadow-lg"
+            />
+          </div>
           <div className="flex-1 mb-6 md:mb-0">
             <h3 className="text-white font-bold text-3xl">First Job</h3>
             <a
@@ -153,15 +162,6 @@ export function CV() {
               about the company and the projects I will be working on and to
               contribute my skills and knowledge to the team.
             </p>
-          </div>
-          <div className="flex-1 pl-3">
-            <Image
-              src="https://www.etes.de/files/etes/bilder/ETES_Au%C3%9Fengeb%C3%A4ude.png"
-              alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-40 md:h-44 lg:h-60 w-full shadow-lg"
-            />
           </div>
         </div>
       ),

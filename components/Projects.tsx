@@ -180,7 +180,7 @@ const Projects = () => {
           <CardBody className="bg-transparent relative group/card w-auto sm:w-[30rem] h-auto rounded-xl p-6 border border-black-300">
             <CardItem translateZ="100" className="w-full mt-4">
               <Image
-                src="https://github.com/Maxiboy441/PixelPrime/blob/develop/Documentation/frontend-images/Home-content.png?raw=true"
+                src="/assets/pixelprime.png"
                 height="1000"
                 width="1000"
                 className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"

@@ -135,7 +135,7 @@ export function CV() {
       ),
     },
     {
-      title: "Soon",
+      title: "18.08.2025",
       content: (
         <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="flex-1 pr-5">

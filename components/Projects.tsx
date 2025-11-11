@@ -382,7 +382,7 @@ const Projects = () => {
               <CardItem
                 translateZ={20}
                 as={Link}
-                href="https://twitter.com/mannupaaji"
+                href="/"
                 target="__blank"
                 className=" opacity-0"
                 style={{ fontSize: "20px" }}

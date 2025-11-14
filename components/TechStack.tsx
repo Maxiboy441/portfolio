@@ -58,7 +58,13 @@ const skills = [
         { name: 'Raspberry Pi', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Raspberry_Pi_B%2B_illustration.svg/2560px-Raspberry_Pi_B%2B_illustration.svg.png' },
         { name: 'Jupyter', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1200px-Jupyter_logo.svg.png' },
         { name: 'Supabase', logo: 'https://i.namu.wiki/i/GouPhhDWuWSZ3BRxBr-vF1WSD1jqAYvOJ2rSEGX1asr11zMTeHG2IIoEPdnSkLT4zXYQISIyGFXxRtBD66_PfA.svg' },
-        { name: 'AWS', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/800px-Amazon_Web_Services_Logo.svg.png' }
+        { name: 'AWS', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/800px-Amazon_Web_Services_Logo.svg.png' },
+        { name: 'K8s', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Kubernetes_logo_without_workmark.svg/617px-Kubernetes_logo_without_workmark.svg.png?20190926210707' },
+        { name: 'Flux', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/17/Flux_color_logo.png' },
+        { name: 'Helm', logo: 'https://palark.com/wp-content/uploads/2021/04/Making-the-most-out-of-Helm-templates.png' },
+
+      
+
       ]
     }
   ];

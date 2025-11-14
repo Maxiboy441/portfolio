@@ -33,7 +33,8 @@ module.exports = {
       "upload.wikimedia.org",
       "i.namu.wiki",
       "www.svgrepo.com",
-      "www.etes.de"
+      "www.etes.de",
+      "palark.com"
     ],
   },
 };

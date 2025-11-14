@@ -21,11 +21,11 @@ export function CV() {
           </p>
           <div className="mt-6">
             <Image
-              src="https://www.vaihingen.de/fileadmin/_processed_/d/8/csm_Horrheim_DSC7161_cbb66a81e5.jpg"
+              src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HorrheimRathaus.jpg"
               alt="startup template"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover h-40 w-full shadow-lg"
+              width={3795}
+              height={2848}
+              className="rounded-lg object-cover h-80 w-full shadow-lg"
             />
           </div>
         </div>

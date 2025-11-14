@@ -135,7 +135,7 @@ export function CV() {
       ),
     },
     {
-      title: "Sep-Nov 2025",
+      title: "Sep - Nov 2025",
       content: (
         <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="flex-1 pr-5">

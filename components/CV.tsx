@@ -135,7 +135,7 @@ export function CV() {
       ),
     },
     {
-      title: "Sep 2025",
+      title: "Sep-Nov 2025",
       content: (
         <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="flex-1 pr-5">
@@ -156,11 +156,9 @@ export function CV() {
               ETES GmbH
             </a>
             <p className="text-neutral-200 text-xs md:text-sm font-normal">
-              After my apprenticeship, I will continue to work as a full-stack
-              developer at ETES GmbH. Contracts are already signed and I am
-              looking forward to the new challenges. Im exiteted to learn more
-              about the company and the projects I will be working on and to
-              contribute my skills and knowledge to the team.
+              During my time at ETES GmbH, I quickly took on responsibilities in Kubernetes and on-premises infrastructure.
+               I helped build the first OpenCloud cluster and planned the base Kubernetes architecture, gaining hands-on experience 
+               in system design, service organization, and infrastructure planning.
             </p>
           </div>
         </div>

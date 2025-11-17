@@ -22,7 +22,7 @@ const Hero = () => {
             <h1 className='text-4xl font-bold mt-6 mb-4 md:text-5xl md:leading-tight'>
                 Young, Motivated, and Ready to Innovate with Modern Technologies
             </h1>
-            <TextGenerateEffect className='text-lg mt-6 opacity-90 max-w-3xl' words=' Hello, I&apos;m Max, a full-stack junior web developer in my 3rd year of apprenticeship in Germany. Eager to learn, take responsibility, and bring fresh ideas to the table.'/>
+            <TextGenerateEffect className='text-lg mt-6 opacity-90 max-w-3xl' words="Hello, I'm Max, a full-stack junior web developer who completed his apprenticeship in mid 2025 and is now actively looking for exciting new opportunities. Eager to learn, take responsibility, and bring fresh ideas to the table."/>
         </div>
     </div>
   )

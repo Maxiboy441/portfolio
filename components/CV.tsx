@@ -164,6 +164,47 @@ export function CV() {
         </div>
       ),
     },
+    {
+      title: "March 2026",
+      content: (
+        <div className="mb-12">
+          <div className="flex justify-center mb-6">
+            <Image
+              src="https://www.hs-pforzheim.de/fileadmin/_processed_/0/4/csm_HSPF_Bibliothek_Frontal_0001_7fe8060487.jpg"
+              alt="feature template"
+              width={930}
+              height={620}
+              className="rounded-lg object-cover h-90 w-full shadow-lg"
+            />
+          </div>
+          <h3 className="text-white font-bold text-3xl">Studies – Product Development & Technical Design</h3>
+          <a
+            href="https://www.hs-pforzheim.de"
+            className="text-gray-400 text-base hover:text-[#CBACF9]"
+          >
+            Pforzheim University of Applied Sciences
+          </a>
+          <p className="text-neutral-200 text-xs md:text-sm font-normal mb-6">
+              Starting in March 2026, I will begin my studies in Product Development and
+              Technical Design. After completing my apprenticeship in software
+              development, I intentionally expanded my focus toward mechanics and
+              hardware. My goal is to develop holistic solutions — such as machines
+              where mechanical design and software are conceived together from the
+              start to ensure seamless integration.
+              <br /><br />
+              This interest grew through hands-on experience working on motorcycles and
+              cars, as well as my passion for 3D printing and mechanical prototyping.
+              I am fascinated by manufacturing processes, mechanical engineering, and
+              design, just as much as by software development.
+              <br /><br />
+              I am highly motivated and look forward to this next step. Companies
+              interested in supporting me through a working student position in
+              software development, product development, or a combination of both are
+              welcome to get in touch..
+          </p>
+        </div>
+      ),
+    },
   ];
 
   return (

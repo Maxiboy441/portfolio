@@ -34,7 +34,8 @@ module.exports = {
       "i.namu.wiki",
       "www.svgrepo.com",
       "www.etes.de",
-      "palark.com"
+      "palark.com",
+      "www.hs-pforzheim.de"
     ],
   },
 };
